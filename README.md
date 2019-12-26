@@ -14,4 +14,20 @@ To-do, creacion de tareas, asignacion, cambio de estado y lista de tareas, creac
 
 # Instalar pip en el entorno
   $python -m pip install --upgrade pip
-#   
+  
+# Instalar dependencias
+  $pip install -r requirements.txt
+  
+# Clonamos el proyecto
+ $git clone 'https://github.com/marlonpa/To-Do.git'
+ 
+# Corremos el proyecto
+ $python manager.py makemigrations users agenda
+ $python manager.py migrate
+ $python manager.py createsuperuser
+ $python manager.py runserver
+ 
+# Abrimos navegador
+  localhost:8000
+
+

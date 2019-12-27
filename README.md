@@ -21,6 +21,10 @@ To-do, creacion de tareas, asignacion, cambio de estado y lista de tareas, creac
 # Clonamos el proyecto
  $git clone 'https://github.com/marlonpa/To-Do.git'
  
+# Se crea base de datos en mysql
+  mysql -u root -p
+  create database todo;
+ 
 # Corremos el proyecto
  $python manager.py makemigrations users agenda
  $python manager.py migrate
